@@ -1,0 +1,53 @@
+$flaticon_new_icons-drsmart-font: "flaticon_new_icons-drsmart";
+
+@font-face {
+    font-family: $flaticon_new_icons-drsmart-font;
+    src: url("./flaticon_new_icons-drsmart.ttf?6ce12c6b377ca16b07c1a97eb1e3a89b") format("truetype"),
+url("./flaticon_new_icons-drsmart.woff?6ce12c6b377ca16b07c1a97eb1e3a89b") format("woff"),
+url("./flaticon_new_icons-drsmart.woff2?6ce12c6b377ca16b07c1a97eb1e3a89b") format("woff2"),
+url("./flaticon_new_icons-drsmart.eot?6ce12c6b377ca16b07c1a97eb1e3a89b#iefix") format("embedded-opentype"),
+url("./flaticon_new_icons-drsmart.svg?6ce12c6b377ca16b07c1a97eb1e3a89b#flaticon_new_icons-drsmart") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_new_icons-drsmart !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_new_icons-drsmart-map: (
+    "doctor": "\f101",
+    "facebook": "\f102",
+    "youtube": "\f103",
+    "twitter": "\f104",
+    "google": "\f105",
+    "instagram": "\f106",
+    "linkedin-logo": "\f107",
+);
+
+.flaticon-doctor:before {
+    content: map-get($flaticon_new_icons-drsmart-map, "doctor");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon_new_icons-drsmart-map, "facebook");
+}
+.flaticon-youtube:before {
+    content: map-get($flaticon_new_icons-drsmart-map, "youtube");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon_new_icons-drsmart-map, "twitter");
+}
+.flaticon-google:before {
+    content: map-get($flaticon_new_icons-drsmart-map, "google");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon_new_icons-drsmart-map, "instagram");
+}
+.flaticon-linkedin-logo:before {
+    content: map-get($flaticon_new_icons-drsmart-map, "linkedin-logo");
+}

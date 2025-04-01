@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "flaticon_new_icons-drsmart";
+    src: url("./flaticon_new_icons-drsmart.ttf?6ce12c6b377ca16b07c1a97eb1e3a89b") format("truetype"),
+url("./flaticon_new_icons-drsmart.woff?6ce12c6b377ca16b07c1a97eb1e3a89b") format("woff"),
+url("./flaticon_new_icons-drsmart.woff2?6ce12c6b377ca16b07c1a97eb1e3a89b") format("woff2"),
+url("./flaticon_new_icons-drsmart.eot?6ce12c6b377ca16b07c1a97eb1e3a89b#iefix") format("embedded-opentype"),
+url("./flaticon_new_icons-drsmart.svg?6ce12c6b377ca16b07c1a97eb1e3a89b#flaticon_new_icons-drsmart") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_new_icons-drsmart !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-doctor:before {
+    content: "\f101";
+}
+.flaticon-facebook:before {
+    content: "\f102";
+}
+.flaticon-youtube:before {
+    content: "\f103";
+}
+.flaticon-twitter:before {
+    content: "\f104";
+}
+.flaticon-google:before {
+    content: "\f105";
+}
+.flaticon-instagram:before {
+    content: "\f106";
+}
+.flaticon-linkedin-logo:before {
+    content: "\f107";
+}
