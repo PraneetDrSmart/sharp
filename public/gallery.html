@@ -24,6 +24,29 @@
     <link href="vendor/bootstrap-datetimepicker/bootstrap-datetimepicker.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="font-new/flaticon_new_icons-drsmart.css">
+    <link rel="stylesheet" href="google-style.css">
+
+
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+        console.log('jQuery version:', $.fn.jquery);
+      
+
+        $("#services2").load("services2.html", function(response, status, xhr) {
+            if (status == "error") {
+                console.log("Error loading header: ", xhr.status, xhr.statusText);
+            }
+        });
+        $("#footer").load("footer.html", function(response, status, xhr) {
+            if (status == "error") {
+                console.log("Error loading footer: ", xhr.status, xhr.statusText);
+            }
+        });
+    });
+</script>
+
+
     <!--Favicon-->
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <!-- Google Fonts -->
@@ -31,7 +54,6 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <!-- Google map -->
-    
 </head>
 
 <body class="shop-page">
@@ -360,76 +382,8 @@
         <!--//section special offers-->
     </div>
    <!--footer-->
-<div class="footer mt-0">
-    <div class="container">
-        <div class="row py-1 py-md-2 px-lg-0">
-            <div class="col-lg-4 footer-col1">
-                <div class="row flex-column flex-md-row flex-lg-column">
-                    <div class="col-md col-lg-auto">
-                        <div class="footer-logo">
-                            <img src="images/logo.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="mt-2 mt-lg-0"></div>
-                    </div>
-                    <div class="col-md">
-                        <div class="footer-text mt-1 mt-lg-2">
-                            <p align="justify">Drishti Eye Centre is located at 2 convenient locations across Srinagar Colony & Gachibowli . Consultations and surgical procedures are performed at each location.</p>
-                            
-                        </div>
-                     
 
-                        <div class="footer-social d-md-none d-lg-block">
-                            <a href="https://www.facebook.com/Sharp-Vision-Eye-Hospital-104445238174963" target="blank" class="hovicon"><i class="icon-facebook-logo"></i></a>
-								<a href="https://twitter.com/HospitalSharp" target="blank" class="hovicon"><i class="icon-twitter-logo"></i></a>
-								<a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x3bcb97ee28f51f6f:0x39054161d89b409c?source=g.page.default" target="blank" class="hovicon"><i class="icon-google-logo"></i></a>
-								<a href="https://www.instagram.com/sharpvisioneyehospital/" target="blank" class="hovicon"><i class="icon-instagram"></i></a>
-                    
-                            <br>
-                    
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4">
-                <h3>Gachibowli</h3>
-                <div class="h-decor"></div>
-                <div class="contact-map">
-                    <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ6YF9qzq5wjsRQiMKE5pJVM0&key=AIzaSyC0kjb_Yw-qPgXt7EY-9_UlWqqgHIApmlk"></iframe>
-                    <ul class="icn-list">
-                        <li><i class="icon-placeholder2"></i>Plot No. 16, Lane, beside Little Goa, opposite Omega Hospital, Sri Shyam Nagar, Telecom Nagar, Gachibowli, Hyderabad, Telangana  </li>
-                       
-                        <li><i class="icon-telephone"></i><b><span class="phone"><span class="text-nowrap">+91 8645868788</span></span></b></li>
-                    </ul>
-                </div>
-                
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <h3>Srinagar Colony</h3>
-                <div class="h-decor"></div>
-                <div class="contact-map">
-                    <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJCe4JtM2QyzsRP7MHm3aQpro&key=AIzaSyC0kjb_Yw-qPgXt7EY-9_UlWqqgHIApmlk"></iframe>
-                    <ul class="icn-list">
-                        <li><i class="icon-placeholder2"></i>114/A, Lane Opp SBI, Yella Reddy Guda Rd, <br>Srinagar Colony, <br>Hyderabad, Telangana 500037
-                        </li>
-                     
-                        <li><i class="icon-telephone"></i><b><span class="phone"><span class="text-nowrap">+91 040 2374 2158</span></span></b></li>
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row text-center text-md-left">
-                <div class="col-sm">Copyright © 2024  &nbsp;<a href="#">Drishti Eye Center</a></div>
-                <div class="col-sm-auto ml-auto"><span class="d-sm-inline">Powered by <b>Dr Sm@rt</b></span></div>
-            </div>
-        </div>
-    </div>
-</div>
+   <div id="footer"></div>
 <!--//footer-->
     <div class="backToTop js-backToTop">
         <i class="icon icon-up-arrow"></i>
